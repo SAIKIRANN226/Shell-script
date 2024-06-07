@@ -12,4 +12,4 @@ echo "$PERSON2: I am good $PERSON1, How are you"
 
 
 
-# Variables can be recommended in capital letters but not mandatory,we can call these variables using $ symbol.
+# Variables can be recommended in capital letters with no gaps or spaces between but not mandatory,we can call these variables using $ symbol.

@@ -11,7 +11,7 @@ else
 fi
 
 
-yum install GIT -y
+yum install git -y
 if [ $? -ne 0 ]
 then 
     echo "ERROR= Git installation is failure,please run with the root user"

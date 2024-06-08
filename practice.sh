@@ -1,5 +1,6 @@
 #!/bin/bash
 
+ID=$(id -u)
 
 ID=(id -u)
 R="\e[31m"

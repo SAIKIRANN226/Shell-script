@@ -22,7 +22,7 @@ fi # fi means reverse of if, indicating condition end
 
 yum install mysql -y
 
-VALIDATE $? "Installing MySQL"   # we give args to the shellscript similarly we need to give inputs to the functions also
+VALIDATE $? "Installing MySQL"   # we give args to the shellscript similarly we need to give inputs to the functions also, here $? will get the mysql exit status or passing the exit status of the previous  command and followed by what did you do that is "Installing MySQL" , so here you are passing two args(inputs) 1.exit status 2.what did you do,we can retrive this by giving $1 and $2
 
 yum install git -y
 

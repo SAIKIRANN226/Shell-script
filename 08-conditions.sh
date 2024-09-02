@@ -8,3 +8,10 @@ then
 else
    echo "Give number $NUMBER is not greater than 100"
 fi
+
+
+# $NUMBER > 100    ----> greater than
+# $NUMBER -gt 100  ----> greater than 
+# $NUMBER -lt 100  ----> less than
+# $NUMBER -ge 100  ----> greater than or equal to
+# $NUMBER -le 100  ----> less than or equal to 

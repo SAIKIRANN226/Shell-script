@@ -10,7 +10,7 @@ else
     echo "You are root user"
 fi # fi means reverse of if, indicating condition end
 
-yum install mysql -y
+yum install mysql -y # -y should give otherwise program will wait for our input
 
 if [ $? -ne 0 ]
 then

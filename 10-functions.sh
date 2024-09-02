@@ -3,7 +3,7 @@
 ID=$(id -u)
 
 VALIDATE(){
-    if [ $1 -ne 0 ]   # here $1 is exit status and $2 is installing mysql,so similarly for git alsi $1=exit status,$2=git
+    if [ $1 -ne 0 ]   # here $1 is exit status and $2 is installing mysql(what you are doing),so similarly for git also
     then
         echo "ERROR:: $2 ... FAILED"
         exit 1
@@ -22,7 +22,7 @@ fi # fi means reverse of if, indicating condition end
 
 yum install mysql -y
 
-VALIDATE $? "Installing MySQL"   # we give args to the shellscript similarly we need to give inputs to the functions also, here $? will get the mysql exit status or passing the exit status of the previous  command and followed by what did you do that is "Installing MySQL" , so here you are passing two args(inputs) 1.exit status 2.what did you do,we can retrive this by giving $1 and $2
+VALIDATE $? "Installing MySQL"   # we give args to the shellscript similarly we need to give inputs to the functions also, here $? will get the mysql previous exit status or passing the exit status of the previous  command and followed by what did you do that is "Installing MySQL" , so here you are passing two args(inputs) 1.exit status 2.what did you do,we can retrive this by giving $1 and $2
 
 yum install git -y
 

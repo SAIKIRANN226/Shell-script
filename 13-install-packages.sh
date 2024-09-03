@@ -26,7 +26,7 @@ then
     exit 1 # you can give other than 0
 else
     echo "You are root user"
-fi # fi means reverse of if, indicating condition end
+fi
 
 #echo "All arguments passed: $@"
 # git mysql postfix net-tools

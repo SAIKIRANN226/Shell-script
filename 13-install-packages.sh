@@ -28,7 +28,7 @@ else
     echo "You are root user"
 fi
 
-#echo "All arguments passed: $@"
+# echo "All arguments passed: $@"
 # git mysql postfix net-tools
 # package=git for first time
 

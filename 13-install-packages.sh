@@ -28,7 +28,7 @@ else
     echo "You are root user"
 fi
 
-# echo "All arguments passed: $@"
+# echo "All arguments passed: $@" ---> example of giving arguments in the server ---> 13-install-packages.sh git nginx mysql ---> when you give arguments as per your requirement it will be running in the loop as per the below script
 # git mysql postfix net-tools
 # package=git for first time
 

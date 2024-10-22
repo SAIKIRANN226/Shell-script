@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DATE=$(date)
+DATE=$(date) # DATE --> variable ; $(date) --> value
 
 echo "Script started executing: ${DATE}"
 

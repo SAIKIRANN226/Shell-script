@@ -1,12 +1,12 @@
 #!/bin/bash
 
 ID=$(id -u)
-TIMESTAMP=$(date +%F-%H-%M-%S)
+TIMESTAMP=$(date +%F-%H-%M-%S) # If you type date --help you will get the formats
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
 
-LOGFILE="/tmp/$0-$TIMESTAMP.log"
+LOGFILE="/tmp/$0-$TIMESTAMP.log" # Storing log in temp directory for practicing
 
 echo "Script started executing at $TIMESTAMP" &>> $LOGFILE
 

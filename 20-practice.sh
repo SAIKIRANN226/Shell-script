@@ -24,9 +24,15 @@ else
     echo -e "$Y Now you are root user Please proceed with the script $N"
 fi
 
-yum install mysql -y
-VALIDATE $? "$Y Installing mysql $N"
-
-yum install git -y
-VALIDATE $? "$Y Installing git $N"
+for package in $@
+do
+    yun list installed $package
+    if [ $? -ne 0 ]
+    then 
+        yum install $package -y
+        VALIDATE $? "Installing $package
+    else
+        echo -e "$Y Already installed so SKIPPING $N"
+    fi
+done
 

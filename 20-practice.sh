@@ -26,13 +26,13 @@ fi
 
 for package in $@
 do
-    yun list installed $package
+    yum list installed $package
     if [ $? -ne 0 ]
     then 
         yum install $package -y
-        VALIDATE $? "Installing $package
+        VALIDATE $? "Installing $package"
     else
-        echo -e "$Y Already installed so SKIPPING $N"
+        echo -e "$package already installed so SKIPPING...$N"
     fi
 done
 

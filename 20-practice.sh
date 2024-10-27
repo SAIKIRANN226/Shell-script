@@ -11,7 +11,7 @@ then
     echo -e "$R ERROR:: Please run this script with root user"
     exit 1
 else
-    echo -e "$Y Now you are root user Please proceed with the script"
+    echo -e "$Y Now you are root user Please proceed with the script $N"
 fi
 
 yum install mysql -y

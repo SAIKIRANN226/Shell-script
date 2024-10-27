@@ -4,12 +4,12 @@ NUMBER=$1
 
 if [ $NUMBER -gt 100 ]
 then
-   echo "Give number $NUMBER is greater than 100"
+   echo "Given number $NUMBER is greater than 100"
 else
-   echo "Give number $NUMBER is not greater than 100"
+   echo "Given number $NUMBER is not greater than 100"
 fi
 
-
+# fi is the opposite of the if condition that means end
 # $NUMBER > 100    ----> greater than
 # $NUMBER -gt 100  ----> greater than 
 # $NUMBER -lt 100  ----> less than

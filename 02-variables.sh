@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PERSON1=Saikiran # Variables can be recommended in capital letters with no gaps or spaces between but not mandatory,we can call these variables using $ symbol.
+PERSON1=Saikiran # Variables is a dry concept dont repeat yourself, these can be recommended in capital letters with no gaps or spaces between but not mandatory,we can call these variables using $ symbol.
 PERSON2=Samyuktha
 
 echo "$PERSON1: Hello $PERSON2, Good Morning"

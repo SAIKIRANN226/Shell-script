@@ -2,7 +2,7 @@
 
 ID=$(id -u)
 
-VALIDATE(){
+VALIDATE(){ # VALIDATE block is nothing but we are just validating wether it is installed or not, Here VALIDATE name is our wish we can keep any name as function 
     if [ $1 -ne 0 ]   # Here $1 is exit status $? and $2 is installing mysql(what you are doing), so similarly for git also
     then
         echo "ERROR:: $2 ... FAILED"

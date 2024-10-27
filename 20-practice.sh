@@ -6,6 +6,16 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
+VALIDATE(){
+    if [ $1 -ne 0 ]
+    then 
+       echo -e "$2 ..$R FAILED $N "
+       exit 1
+    else
+        echo -e "$2... $G SUCCESS $N"
+    fi
+}
+
 if [ $ID -ne 0 ]
 then 
     echo -e "$R ERROR:: Please run this script with root user"
@@ -15,11 +25,8 @@ else
 fi
 
 yum install mysql -y
+VALIDATE $? "Installing mysql"
 
-if [ $? -ne 0 ]
-then 
-    echo -e "$R Installing mysql is FAILED"
-    exit 1
-else
-    echo -e "$G Installing mysql is SUCCESS"
-fi
+yum install git -y
+VALIDATE $? "Installing git"
+

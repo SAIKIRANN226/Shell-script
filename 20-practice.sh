@@ -3,7 +3,6 @@
 PACKAGES=("curl" "wget" "git" "vim" "htop")
 
 LOGFILE="/tmp/package_install.log"
-exec > >(tee -a "$LOGFILE") 2>&1
 
 echo "Updating package list..."
 sudo apt update

@@ -1,19 +1,25 @@
 #!/bin/bash
 
-PACKAGES=("curl" "wget" "git" "vim" "htop")
+# Packages to install
+PACKAGES=("mysql-server" "git")
 
-LOGFILE="/tmp/package_install.log"
+# Logfile to store installation logs
+LOGFILE="/var/log/mysql_git_install.log"
 
+# Update package list
 echo "Updating package list..."
 sudo apt update
 
+# Loop through each package and install if not already installed
 for package in "${PACKAGES[@]}"; do
+    # Check if the package is already installed
     if dpkg -l | grep -q "^ii  $package "; then
         echo "$package is already installed."
     else
         echo "Installing $package..."
         sudo apt install -y "$package"
         
+        # Verify if the installation was successful
         if [ $? -eq 0 ]; then
             echo "$package installed successfully."
         else
@@ -22,4 +28,4 @@ for package in "${PACKAGES[@]}"; do
     fi
 done
 
-echo "Package installation complete."
+echo "MySQL and Git installation complete."

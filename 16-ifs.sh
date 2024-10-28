@@ -6,7 +6,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-if [ ! -f $file ] # ! denotes opposite
+if [ ! -f $file ] # ! denotes opposite # f means checking wether the file is there or not
 then
     echo -e "$R Source directory: $file does not exists. $N"
 fi
@@ -17,3 +17,5 @@ do
     echo "user ID: $user_id"
     echo "User Full name: $user_fullname"
 done < $file
+
+# If you enter "cat /etc/passwd" you will get all the user information which is not in good format so you need to read this properly by using while loop with Internal field separater(IFS)

@@ -7,7 +7,7 @@ Y="\e[33m"
 N="\e[0m"
 
 TIMESTAMP=$(date +%F-%H-%M-%S)
-LOGFILE="/tmp/$0-$TIMESTAMP.log"  # You can give the location of saving the log where ever you want, but for practice here we are giving in tmp
+LOGFILE="/tmp/$0-$TIMESTAMP.log"  # You can give the location of saving the log where ever you want, but for practice here we are giving in tmp and $0 ---> Scriptname
 
 echo "script stareted executing at $TIMESTAMP" &>> $LOGFILE
 
@@ -28,7 +28,7 @@ else
     echo "You are root user"
 fi
 
-# echo "All arguments passed: $@" ---> example of giving arguments in the server ---> 13-install-packages.sh git nginx mysql postfix net-tools ---> when you give arguments as per your requirement it will be running in the loop as per the below script
+# echo "All arguments passed: $@" ---> Example of giving arguments in the server ---> 13-install-packages.sh git nginx mysql postfix net-tools ---> when you give arguments as per your requirement it will be running in the loop as per the below script
 # package=git for first time then followed by nginx,mysql,postfix,net-tools
 
 for package in $@

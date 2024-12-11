@@ -8,4 +8,4 @@ read -s USERNAME # The value entered above will be automatically atteched to USE
 echo "Please enter your Password:: "
 read -s PASSWORD
 
-echo "Username is: $USERNAME, Password is: $PASSWORD" # I am priting just for validation, you should not print username and passwords in scripts, if you commentout this 11th line it will not print the echo
+# echo "Username is: $USERNAME, Password is: $PASSWORD" # I am priting just for validation, you should not print username and passwords in scripts, if you commentout this 11th line it will not print the echo

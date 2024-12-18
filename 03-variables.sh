@@ -6,7 +6,8 @@ echo "Script started executing: $DATE" # You can also give like $DATE
 
 result=$(ls -la)
 
-echo "Files including hidden $result"
+echo "Files including hidden $result" > output.txt
+ls -la >> output.txt
 
 status=$?
 

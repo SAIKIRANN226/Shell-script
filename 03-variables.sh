@@ -2,7 +2,7 @@
 
 DATE=$(date) # DATE --> variable ; $(date) --> value
 
-echo "Script started executing: ${DATE}" # You can also give like $DATE
+echo "Script started executing: $DATE" # You can also give like $DATE
 
 result=$(ls -la)
 

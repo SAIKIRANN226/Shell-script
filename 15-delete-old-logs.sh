@@ -14,8 +14,8 @@ fi
 
 FILES_TO_DELETE=$(find $SOURCE_DIR -type f -mtime +14 -name "*.log") # Command to find a files morethan 14 days
 
-while IFS= read -r line
+while IFS= read -r line # This will read output line by line, IFS=Internal Field separator
 do
     echo "Deleting file: $line"
     rm -rf $line
-done <<< $FILES_TO_DELETE  # > will denote input that means we are giving input to while loop to read every line
+done <<< $FILES_TO_DELETE  # <<< This denote input, that means we are giving output of FILES_TO_DELETE as input to while loop to read every line

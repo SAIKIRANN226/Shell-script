@@ -11,7 +11,7 @@ then
     echo -e "$R Source directory: $file does not exists. $N"
 fi
 
-while IFS=":" read -r username password user_id group_id user_fullname home_dir shell_path
+while IFS=":" read -r username password user_id group_id user_fullname home_dir shell_path # You can search in google "/etc/passwd format"
 do
     echo "username: $username"
     echo "user ID: $user_id"

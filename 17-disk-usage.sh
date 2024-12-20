@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DISK_USAGE=$(df -hT | grep -vE 'tmp|File') # I dont want files with tmp and File | ---> means "or"
-DISK_THRESHOLD=1
+DISK_THRESHOLD=1 # 1 is nothing but 1% as of now we dont have used 70% so we are using 1% just for practice
 message=""
 
 while IFS= read line

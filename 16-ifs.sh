@@ -18,4 +18,4 @@ do
     echo "User Full name: $user_fullname"
 done < $file
 
-# If you enter "cat /etc/passwd" you will get all the user information which is not in good format so you need to read this properly by using while loop with Internal field separater(IFS)
+# If you enter "cat /etc/passwd" you will get all the user information which is not in good format so you need to read this properly by using while loop with Internal field separator(IFS)

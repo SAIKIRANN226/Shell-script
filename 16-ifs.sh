@@ -6,12 +6,12 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-if [ ! -f $file ] # ! denotes opposite # f means checking wether the file is there or not
+if [ ! -f $file ] # ! Denotes opposite, f means checking wether the file is there or not
 then
     echo -e "$R Source directory: $file does not exists. $N"
 fi
 
-while IFS=":" read -r username password user_id group_id user_fullname home_dir shell_path # You can search in google "/etc/passwd format". we can keep anything as a internal fiedl separator like comma,fullstop,slash/
+while IFS=":" read -r username password user_id group_id user_fullname home_dir shell_path # You can search in google "/etc/passwd format". we can keep anything as a internal field separator like comma,fullstop,slash etc.
 do
     echo "username: $username"
     echo "user ID: $user_id"

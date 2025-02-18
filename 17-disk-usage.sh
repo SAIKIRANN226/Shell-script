@@ -10,7 +10,7 @@ do
     partition=$(echo $line | awk '{print $1F}')
     if [ $usage -ge $DISK_THRESHOLD ]
     then
-        message+="High Disk Usage on $partition: $usage <br>" # += means it will append the new line instead of overwriting
+        message+="High Disk Usage on $partition: $usage <br>" # += means it will append the new line instead of overwriting and in shell script new line charater is \n and in html is <br>
     fi
 done <<< $DISK_USAGE
 

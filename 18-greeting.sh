@@ -15,13 +15,13 @@ while getopts ":n:w:h" opt; do
     case $opt in
         n) NAME="$OPTARG";;
         w) WISHES="$OPTARG";;
-        \?) echo "invalid options: -"$OPTARG"" >&2; USAGE; exit;;
-        :) USAGE; exit;;
-        h) USAGE; exit;;
+        \?) echo "invalid options: -"$OPTARG"" >&2; USAGE; exit;; # Invalid argument
+        :) USAGE; exit;; # Empty argument
+        h) USAGE; exit;; # Help argument
     esac
 done
 
-# if [ -z "$NAME" ] || [ -z "$WISHES" ]; then
+# If [ -z "$NAME" ] || [ -z "$WISHES" ]; then
 if [ -z "$NAME" ]; then # Now wishes is optional, -z means empty that means if we dont pass the optarg
     # echo "ERROR: Both -n and -w are mandatory options."
     echo "ERROR: -n is mandatory."

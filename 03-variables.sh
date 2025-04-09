@@ -14,4 +14,4 @@ status=$?
 echo "Status of the above command $status"
 
 
-# How do you run commands in shellscript and take the output ? "${variable-name}" here flower braces is mandatory
+# How do you run commands in shellscript and take the output ? "${variable-name}" here flower braces is mandatory (or) Capturing the output of a command in a variable and also we can redirect output using > or >> for append

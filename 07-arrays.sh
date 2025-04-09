@@ -9,3 +9,6 @@ echo "Second value: ${FRUITS[1]}"
 echo "Second value: ${FRUITS[2]}"
 
 echo "All Fruits: ${FRUITS[@]}"
+
+
+# Array index will start from 0,1,2,3.... we have notation for "ALL" that is "@"

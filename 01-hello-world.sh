@@ -1,5 +1,5 @@
 #!/bin/bash
 
-# this is comment
+# This is comment, it will not print
 
 echo "Hello Shell script"

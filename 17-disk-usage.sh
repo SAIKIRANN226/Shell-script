@@ -16,6 +16,6 @@ done <<< $DISK_USAGE
 
 echo -e "Message: $message"
 
-# echo "$message" | mail -s "High Disk Usage" info@joindevops.com
+# echo "$message" | mail -s "High Disk Usage" info@joindevops.com, This line is from gmail.MD document, sometimes in our company we dont have access, linux team will configure mail.sh, so we can call them by using below command
 
 sh mail.sh "DevOps Team" "High Disk Usage" "$message" "info@joindevops.com" "ALERT High Disk Usage"

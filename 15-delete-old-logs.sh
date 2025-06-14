@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SOURCE_DIR="/tmp/shellscript-logs" # Creating temporory directory as "shellscript-logs" in /tmp folder
+SOURCE_DIR="/tmp/shellscript-logs" # Creating temperory directory as "shellscript-logs" in /tmp folder
 
 R="\e[31m"
 G="\e[32m"

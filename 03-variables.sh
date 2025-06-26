@@ -14,4 +14,4 @@ status=$?
 echo "Status of the above command $status"
 
 
-# How do you capture the output of a command in a variable ? DATE=$(date) and also we can redirect output using > or >> for append
+# How do you capture the output of any linux command in a variable ? DATE=$(date) and also we can redirect the output using > or >> for append

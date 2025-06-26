@@ -9,7 +9,7 @@ else
    echo "Given number $NUMBER is not greater than 100"
 fi
 
-# fi is the opposite of the if condition that means end
+# fi is the opposite of the if condition that means condition end
 # $NUMBER > 100    ----> greater than
 # $NUMBER -gt 100  ----> greater than 
 # $NUMBER -lt 100  ----> less than

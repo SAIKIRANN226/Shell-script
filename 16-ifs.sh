@@ -7,7 +7,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-if [ ! -f $file ] # ! Denotes opposite, f means checking wether the file is there or not
+if [ ! -f $file ] # ! Denotes opposite, f means checking wether the file is there or not ?
 then
     echo -e "$R Source directory: $file does not exists. $N"
 fi

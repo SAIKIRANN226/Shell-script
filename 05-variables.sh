@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# For example if we want to connect to any external systems like DB, we need username and password, if we give username and password outside the shell everybody can see that. So to make confidential we have "read command"
+# For example, if we want to connect to any external systems like DB, we need username and password, if we give username and password outside the shellscript everybody can see that. So to make confidential we have "read -s" command
 
-echo "Please enter your username:: "
-read -s USERNAME # The value entered above will be automatically attached to USERNAME variable
+echo "Please enter your Username:: "
+read -s USERNAME # The value entered above will be automatically attached to the USERNAME variable
 
 echo "Please enter your Password:: "
 read -s PASSWORD

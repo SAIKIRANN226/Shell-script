@@ -7,7 +7,7 @@ Y="\e[33m"
 N="\e[0m"
 
 TIMESTAMP=$(date +%F-%H-%M-%S)
-LOGFILE="/tmp/$0-$TIMESTAMP.log"  # You can give the location of saving the log where ever you want, but for practice here we are giving in tmp and $0 ---> Scriptname
+LOGFILE="/tmp/$0-$TIMESTAMP.log"  
 
 echo "script started executing at $TIMESTAMP" &>> $LOGFILE
 
@@ -28,10 +28,8 @@ else
     echo "You are root user"
 fi
 
-# echo "All arguments passed: $@" ---> Example of giving arguments in the server ---> 13-install-packages.sh git nginx mysql postfix net-tools ---> When you give arguments as per your requirement, it will be running in the loop as per the below script
-# Package=git for first time then followed by nginx,mysql,postfix,net-tools etc. Thats why we put "$@" nothing but all arguments.
 
-for package in $@ # $@ contains all the arguments passed to the script.
+for package in $@ 
 do
     yum list installed $package &>> $LOGFILE # Check installed or not
     if [ $? -ne 0 ] # If not installed
@@ -42,3 +40,11 @@ do
         echo -e "$package is already installed ... $Y SKIPPING $N"
     fi
 done
+
+
+
+# echo "All arguments passed: $@" ---> Example of giving arguments in the server ---> 13-install-packages.sh git nginx mysql postfix net-tools ---> When you give arguments as per your requirement, it will be running in the loop
+
+# Package=git for first time then followed by nginx,mysql,postfix,net-tools etc. Thats why we put "$@" nothing but all arguments passed to the script
+
+# You can give the location of saving the log where ever you want, but for practice here we are giving in tmp and $0 ---> Scriptname

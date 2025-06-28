@@ -8,4 +8,7 @@ read -s USERNAME # The value entered above will be automatically attached to the
 echo "Please enter your Password:: "
 read -s PASSWORD
 
-# echo "Username is: $USERNAME, Password is: $PASSWORD" # I am priting just for validation, you should not print username and passwords in scripts, if you commentout this 11th line it will not print the echo
+# echo "Username is: $USERNAME, Password is: $PASSWORD" # I am priting just for validation, you should not print username and passwords in scripts, if you commentout this 11th line it will not print the echo.
+
+# For example How can you connect to a database server ?
+# mysql -s Servername -U username -P password

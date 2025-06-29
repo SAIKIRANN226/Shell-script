@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DISK_USAGE=$(df -hT | grep -vE 'tmp|File') # vE means, i dont want files with tmp and File | ---> Pipe symbol is "or"
+DISK_USAGE=$(df -hT | grep -vE 'tmp|File') # vE means, i dont want files with tmp and File | ---> Pipe symbol is "or" We have different types of file systems when you enter command "df -hT" but we want only xfs type because those are related to disks, so we do reverse search which is "grep -vE 'tmp|File'" Here v --> I dont want except files tmp and File and E --> Expressions
 DISK_THRESHOLD=1 # 1 is nothing but 1% as of now, we dint used 70% so we are keeping just 1% for practice
 message="" # Empty  
 

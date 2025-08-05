@@ -19,3 +19,10 @@ echo -e "Message: $message"
 # echo "$message" | mail -s "High Disk Usage" info@joindevops.com, This line is from gmail.MD document, sometimes in our company we dont have access, linux team will configure mail.sh, so we can call them by using below command.
 
 sh mail.sh "DevOps Team" "High Disk Usage" "$message" "info@joindevops.com" "ALERT High Disk Usage"
+
+
+
+# First we are doing reverse search to find only disks because we have different file systems also using "df -hT | grep -vE 'tmp|File'"
+# Then DISK_THRESHOLD 
+# MESSAGE
+# We are giving disks information as input to the while loop

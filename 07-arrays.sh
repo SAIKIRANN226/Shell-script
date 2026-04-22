@@ -2,13 +2,13 @@
 
 FRUITS=("Apple" "Banana" "Mango")
 
-echo "First value: ${FRUITS[0]}"
+echo "First fruit is: ${FRUITS[0]}"
 
-echo "Second value: ${FRUITS[1]}"
+echo "Second fruit is: ${FRUITS[1]}"
 
-echo "Second value: ${FRUITS[2]}"
+echo "Third fruit is: ${FRUITS[2]}"
 
-echo "All Fruits: ${FRUITS[@]}"
+echo "All fruits: ${FRUITS[@]}"
 
 
 # Array index will start from 0,1,2,3.... We have notation for "ALL" that is "@"

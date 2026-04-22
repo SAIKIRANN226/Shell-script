@@ -9,5 +9,5 @@ echo "$PERSON1: How are you $PERSON2?"
 echo "$PERSON2: I am good $PERSON1, How are you"
 
 
-# Here we can give the arguments(args) outside the shell. Usage is "sh <file-name> saikiran samyuktha"
+# Here we can give the arguments(args) outside the shell. Usage is "sh <file-name> saikiran mahesh"
 # $1 and $2 is nothing but arguments
